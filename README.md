@@ -1,5 +1,5 @@
 Anleitung zur Ausführung und die Vorführung des Programms als Video :
-**_______________
+_______________
 -  
 
 
