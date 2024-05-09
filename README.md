@@ -1,5 +1,5 @@
 Anleitung zur Ausführung und die Vorführung des Programms als Video :
-**https://youtu.be/GVV6QkHvKZE** (Anleitung ist als Untertitel enthalten)
+**_______________
 -  
 
 
@@ -40,8 +40,7 @@ gehen sie in den Projekt-Ordner, in dem sich die Datei `main.py` findet, und fü
 
 **2. Fehlende Library**  
 Eine der genutzten Library's ist nicht installiert.
-Standardmäßig sollte bei einer Pythoninstallation sowohl Pygame als auch Numpy 
-(eine Python Library für schnellere Listen(also Datenstrukturen)) installiert sein. Sollte dies aber nicht der Fall sein, kann in der 
-Konsole der Befehl `pip install pygame` ausgeführt werden, um Pygame zu installieren, und der Befehl `pip install Numpy` ausgeführt werden,
-um Numpy zu installieren. Sollten diese Library's bereits installiert sein, werden sie nur geupdatet wenn eine neue Version verfügbar ist,
-oder nicht verändert. Es kann also, selbst wenn die Library's installiert sind nicht schaden beide Library's mit den Befehlen zu installieren/updaten.
+Standardmäßig sollte bei einer Pythoninstallation Pygame installiert sein. Sollte dies aber nicht der Fall sein, kann in der 
+Konsole der Befehl `pip install pygame` ausgeführt werden, um Pygame zu installieren.
+Sollte diese Library bereits installiert sein, wird sie nur geupdatet wenn eine neue Version verfügbar ist,
+oder nicht verändert. Es kann also, selbst wenn die Library bereits installiert ist nicht schaden die Library mit dem Befehl zu installieren/updaten.
