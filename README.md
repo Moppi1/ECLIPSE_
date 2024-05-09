@@ -1,3 +1,5 @@
+![grafik](https://github.com/Moppi1/ECLIPSE_/assets/150188517/3fceb204-4549-4491-a63a-967b5538c0a6)
+
 Anleitung zur Ausführung und die Vorführung des Programms als Video :
 **_______________**
 -  
