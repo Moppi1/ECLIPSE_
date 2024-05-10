@@ -60,7 +60,8 @@ class collision_world:
                 x = max(p1_min,p2_min)      
                 y = min(p1_max,p2_max)     
                 overlap = max(x,y)-min(x,y)
-                if p1_min < p2_min: overlap *= -1
+                #orienting the MTV
+                if p1_min < p2_min: overlap *= -1   
 
                 #check if new overlap ist smaller tha depth
                 if depth == None: depth,mtv = overlap,normal

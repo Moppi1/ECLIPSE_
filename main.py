@@ -15,7 +15,7 @@ def main():
         inputs(deltatime,player)
 
         
-        player.render(True,True)
+        player.render(settings.player_show_normals,settings.show_boundingspheres)
         if settings.show_polygon:   #starts rendering cube if it is visible
             polygon.render(settings.show_poly_normals
             ,settings.show_boundingspheres)
@@ -73,7 +73,7 @@ if __name__ == "__main__":
         return polygon
 
     player = init_player()
-    if settings.show_square:    polygon = init_cube()
-    if settings.show_polygon:   cube = inti_poylgon()
+    if settings.show_square:    cube    = init_cube()
+    if settings.show_polygon:   polygon = inti_poylgon()
 
     main()

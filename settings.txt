@@ -11,14 +11,14 @@ screen_resolution: 4096x1152
 
 show_square: True
 show_square_normals: True
-square_can_move: False
+square_can_move: True
 
-show_polygon: True
+show_polygon: False
 show_poly_normals: True
 polygon_can_move: True
 
 player_show_normals: True
-player_double_influence: False
+player_double_influence: True
 player_speed: 200
 
 ============= Collisionsworld settings =============
@@ -26,5 +26,5 @@ player_speed: 200
 do_collision_resolve: True
 
 show_boundingspheres: True
-show_projections: False
+show_projections: True
 show_mtv: True
