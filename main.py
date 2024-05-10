@@ -44,6 +44,7 @@ if __name__ == "__main__":
     settings.load_settings("settings.txt")
 
     d.window(settings.screen_resolution,"Eclipse")
+    d.window_seticon("icon_eclipse.png")
 
     col_world = c.collision_world()
 

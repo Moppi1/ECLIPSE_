@@ -1,11 +1,11 @@
-damit die Einstellungen funktionieren, dürfen keine Zeile und
+damit die Einstellungen funktionieren, dürfen keine Zeilen und
 Leerzeichen Eingefügt oder entfernt werden. Das Einzige, das verändert werden
 darf sind die Werte wobei die Formatierung z.B. bei der Auflösung (<Breite>x<höhe>)
 auch nicht geändert werden darf...
 
 ===================== SETTINGS =====================
 
-screen_resolution: 2560x720
+screen_resolution: 4096x1152
 
 ==== visibility & attribute settings of objects ====
 
