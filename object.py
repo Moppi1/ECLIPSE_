@@ -67,7 +67,7 @@ class object:
             y = float(i.split(" ")[1])
             self.points.append(v.vec(round(x,res),round(y,res)))
         self.calculate_collider()
-        print("loaded point list from",path)
+        #print("loaded point list from",path)
 
     def create_shape_circle(self,rad : float = 30):
         self.shape_type = "circle"
@@ -77,6 +77,7 @@ class object:
         self.color = rgb
 
     def activate_collision(self,c_world,moveable:bool=False,player:bool=False):
+        """add this object to collision world.\n the object can be moveable and """
         c_world.add_collider(self)
         self.is_player = False if c_world.get_player_exists() else player
         self.is_moveable = moveable if not self.is_player else True

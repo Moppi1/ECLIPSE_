@@ -1,1 +1,30 @@
+damit die Einstellungen funktionieren, dürfen keine Zeile und
+Leerzeichen Eingefügt oder entfernt werden. Das Einzige, das verändert werden
+darf sind die Werte wobei die Formatierung z.B. bei der Auflösung (<Breite>x<höhe>)
+auch nicht geändert werden darf...
+
+===================== SETTINGS =====================
+
 screen_resolution: 2560x720
+
+==== visibility & attribute settings of objects ====
+
+show_square: True
+show_square_normals: True
+square_can_move: False
+
+show_polygon: True
+show_poly_normals: True
+polygon_can_move: True
+
+player_show_normals: True
+player_double_influence: False
+player_speed: 200
+
+============= Collisionsworld settings =============
+
+do_collision_resolve: True
+
+show_boundingspheres: True
+show_projections: False
+show_mtv: True

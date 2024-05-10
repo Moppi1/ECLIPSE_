@@ -17,25 +17,23 @@ change_width = change_height = 0
 
 # ====== essential ======
 
-def window(w,h,name="tengine",path:str=None):
+def window(res,name="tengine",path:str=None):
     """creates the window for pygame"""
     
     global screen, height, width , clock
     global change_height , change_width
-    width = w
-    height= h 
+    width = res[0]
+    height= res[1]
 
     clock = pygame.time.Clock()
     
-    screen = pygame.display.set_mode((w,h))
+    screen = pygame.display.set_mode((res[0],res[1]))
     if path != None :
         Icon = pygame.image.load(path)
         pygame.display.set_icon(Icon)
     screen.fill((241, 252, 255))
 
     pygame.display.set_caption(name)
-    #Icon = pygame.image.load('images/logo3.png')
-    #pygame.display.set_icon(Icon)
 
     change_width = width // 2 #constant for transforming width
     change_height = height // 2 #constant for transforming height

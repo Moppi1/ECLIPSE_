@@ -2,15 +2,16 @@ import vec_2d as v
 import object as o
 import draw as d
 
+#=== Handles all the collisions by using mtv and Sat ===
 
 class collision_world:
     def __init__(self) -> None:
         self.objects = []
 
-    def add_collider(self,object):
+    def add_collider(self,object):  #adds a obect to be considered for collisions
         self.objects.append(object)
 
-    def get_player_exists(self) -> bool:
+    def get_player_exists(self) -> bool: #checks if alrady a player object exists
         for i in self.objects: 
             try: 
                 if i.is_player: return True
@@ -18,6 +19,7 @@ class collision_world:
         return False
 
     def update(self,resolve:bool=False,show_a:bool=False,show_mtv:bool=False):
+        # Starts updating the collisions with the given settings
         if len(self.objects) >= 2:
             self.broad_phase(resolve,show_a,show_mtv)
     
@@ -39,7 +41,7 @@ class collision_world:
         test_col = []               	#a list of the results of SAT (True and False)
         mtv , depth = None , None       #initialize mtv and depth
 
-        def Sat(normal,mtv,depth):
+        def Sat(normal,mtv,depth):      #The whole Sat/Mtv algorithm
             projection1 = []
             projection2 = []
 
@@ -77,7 +79,7 @@ class collision_world:
         for i in ob1.normals:  mtv , depth = Sat(i, mtv, depth)
         for i in ob2.normals:  mtv , depth = Sat(i, mtv , depth)
 
-        # Resolve collision with mtv
+        # Resolve collision with calculated mtv
         if resolve:
             if False not in test_col:       #if both objects really colide
                 if ob1.is_moveable and ob2.is_moveable : #if both objects are allowed to move
