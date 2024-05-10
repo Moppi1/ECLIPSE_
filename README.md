@@ -4,6 +4,9 @@ Anleitung zur Ausführung und die Vorführung des Programms als Video :
 **_______________**
 -  
 
+In den Projektdateien gibt es ein Textdokument mit dem Namen "Settings.txt", in welchem
+die Sichtbarketi von Anzeigen und Objekten und andere Festlegungen
+für die Kollisionserkennung und Auflösung festgelegt werden können.
 
 
 Schritte zum Ausführen des Programms:
