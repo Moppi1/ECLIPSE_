@@ -13,18 +13,18 @@ show_square: True
 show_square_normals: True
 square_can_move: True
 
-show_polygon: False
+show_polygon: True
 show_poly_normals: True
 polygon_can_move: True
 
 player_show_normals: True
 player_double_influence: True
-player_speed: 200
+player_speed: 300
 
 ============= Collisionsworld settings =============
 
 do_collision_resolve: True
 
 show_boundingspheres: True
-show_projections: True
+show_projections: False
 show_mtv: True
