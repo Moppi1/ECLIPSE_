@@ -17,6 +17,7 @@ class object:
         # self.bounding_rad
         # self.transformed_points
         # self.is_moveable
+        # self.is_player
 
     #=== create shape colliders ===
 
@@ -75,9 +76,10 @@ class object:
     def set_color(self,rgb:tuple): #sets color of the shape
         self.color = rgb
 
-    def activate_collision(self,c_world,moveable:bool=False):
+    def activate_collision(self,c_world,moveable:bool=False,player:bool=False):
         c_world.add_collider(self)
-        self.is_moveable = True
+        self.is_player = False if c_world.get_player_exists() else player
+        self.is_moveable = moveable if not self.is_player else True
 
     #=== render ===
 

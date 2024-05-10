@@ -5,6 +5,15 @@ import draw as d
 import vec_2d as v
 import collision_detection as c
 
+def load_settings():
+    file = open("settings.txt","r")
+    c = file.readlines()
+    file.close()
+    c = c[0].split(":")
+    c = c[1].split("x")
+    return int(c[0]),int(c[1])
+
+
 def inputs(t,ob):
     if d.key("q"): ob.scale(20*t)
     if d.key("e"): ob.scale(-20*t)
@@ -30,7 +39,8 @@ def main():
 
 
 if __name__ == "__main__":
-    d.window(2560,720,"Eclipse")
+    w,h = load_settings()
+    d.window(w,h,"Eclipse")
 
     col_world = c.collision_world()
 
@@ -38,13 +48,13 @@ if __name__ == "__main__":
     polygon.create_shape_polygon("polygon1.txt")
     polygon.set_scale(100)
     polygon.set_color((15,15,40))
-    polygon.activate_collision(col_world)
+    polygon.activate_collision(col_world,True,True)
 
-    cube    = o.object(v.vec(200,100))
+    cube    = o.object(v.vec(400,100))
     cube.create_shape_polygon("cube.txt")
     cube.set_scale(50)
     cube.set_color((40, 15, 39))
-    cube.activate_collision(col_world)
+    cube.activate_collision(col_world,True)
 
     polygon2 = o.object(v.vec(-200,-100))
     polygon2.create_shape_polygon("polygon2.txt")
