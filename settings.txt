@@ -5,7 +5,7 @@ auch nicht geändert werden darf...
 
 ===================== SETTINGS =====================
 
-screen_resolution: 4096x1152
+screen_resolution: 1536x864
 
 ==== visibility & attribute settings of objects ====
 
